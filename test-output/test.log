@@ -1,4 +1,0 @@
-21:44:41.218 [main] INFO  c.a.s.UserStepDefinition - #Response: {"user":{"_id":"64f35f70d7d67a0013180353","firstName":"John","lastName":"Doe","email":"bin.doie@example.com","__v":1},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGYzNWY3MGQ3ZDY3YTAwMTMxODAzNTMiLCJpYXQiOjE2OTM2NzEyODB9.5P42PDLuXi1yjc0L1EiawwabWOiLwgudm1qSdRPIJyw"}
-21:44:41.319 [main] INFO  c.a.s.UserStepDefinition - 201: User is added successfully
-21:44:41.321 [main] INFO  c.a.s.UserStepDefinition - User id is :64f35f70d7d67a0013180353and 
-Token is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGYzNWY3MGQ3ZDY3YTAwMTMxODAzNTMiLCJpYXQiOjE2OTM2NzEyODB9.5P42PDLuXi1yjc0L1EiawwabWOiLwgudm1qSdRPIJyw

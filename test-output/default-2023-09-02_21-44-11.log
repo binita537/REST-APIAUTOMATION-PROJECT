@@ -1,3 +1,0 @@
-21:44:11.734 [main] INFO  c.a.s.UserStepDefinition - #Prepraing the adduser payload with data-------
-21:44:11.801 [main] INFO  c.a.s.UserStepDefinition - #Creating payload with this Data-------{firstname=John, lastname=Doe, email=ldklhgklkfyufhn.doie@example.com, password=pass123}
-21:44:11.817 [main] INFO  c.a.s.UserStepDefinition - #Seeting base Url And content Type-------
