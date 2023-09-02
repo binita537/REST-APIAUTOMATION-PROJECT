@@ -1,13 +1,14 @@
 package com.apiautomation.stepdefinitions;
 
+import com.apiautomation.commonutils.CommonUtils;
 import com.apiautomation.requestbuilder.AddUserRequest;
 import com.apiautomation.requestbuilder.AddUserRequestBuilder;
+import com.apiautomation.commonutils.RequestSpecBuilderUtil;
 import com.apiautomation.responsebuilder.AddUserResponse;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -33,7 +34,7 @@ public class UserStepDefinition {
 
     AddUserRequest userRequest;
 
-
+      CommonUtils commonUtils;
     @Given("the user has a new book")
     public void the_user_has_a_new_book(DataTable userDataTable) throws FileNotFoundException {
 
@@ -55,7 +56,7 @@ public class UserStepDefinition {
     }
 
 
-    @When("the user Call AddUser request")
+   /* @When("the user Call AddUser request")
     public void the_user_call_add_ap_i_request() {
 
         log.info("#Seeting base Url And content Type-------");
@@ -69,6 +70,21 @@ public class UserStepDefinition {
 
         log.info("#Response: " + response.asString().replaceAll("\\s+", ""));
     }
+*/
+    @When("the user calls the AddUser request")
+    public void the_user_call_add_ap_i_request() {
+
+        log.info("#Building request Specification with base Uri and content type -------");
+        RequestSpecification requestSpec = new RequestSpecBuilderUtil()
+                .withBaseUri("https://thinking-tester-contact-list.herokuapp.com")
+                .withContentType(String.valueOf(ContentType.JSON))
+                .build();
+        response= given().spec(requestSpec).body(userRequest).when().post("/users");
+
+        log.info("#Response: " + response.asString().replaceAll("\\s+", ""));
+
+    }
+
 
 
     @Then("the user should be added successfully")
