@@ -1,7 +1,20 @@
-﻿# REST-APIAUTOMATION-PROJECT
+﻿# ** REST-APIAUTOMATION-PROJECT**
+
 
 ## Overview
 Welcome to the API Automation Framework, a comprehensive solution for automating the testing of web applications. This framework is designed to simplify the process of creating, organizing, and executing UI tests, allowing you to focus on testing your application's functionality with ease and efficiency.
+
+## Automation Architecture Diagram
+
+
+<kbd>
+<img src="https://github.com/binita537/REST-APIAUTOMATION-PROJECT/assets/75611677/8952b277-fda4-4652-8979-9675977c3bf4" alt="your-image-description" style="border: 1px solid black;">
+</kbd>
+
+
+
+
+
 
 ## Key Features
 * **Structured Configuration:** Uses pom.xml, application.properties, and config.properties for centralized management of dependencies, application settings, and framework configurations.
