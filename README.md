@@ -2,13 +2,13 @@
 
 
 ## Overview
-Welcome to the API Automation Framework, a comprehensive solution for automating the testing of web applications. This framework is designed to simplify the process of creating, organizing, and executing UI tests, allowing you to focus on testing your application's functionality with ease and efficiency.
+Welcome to the API Automation Framework, a comprehensive solution for automating the testing of web applications. This framework is designed to simplify the process of creating, organizing, and executing API tests, allowing you to focus on testing your application's functionality with ease and efficiency.
 
 ## Automation Architecture Diagram
 
 
 <kbd>
-<img src="https://github.com/binita537/REST-APIAUTOMATION-PROJECT/assets/75611677/8952b277-fda4-4652-8979-9675977c3bf4" alt="your-image-description" style="border: 1px solid black;">
+<img src="https://github.com/binita537/REST-APIAUTOMATION-PROJECT/assets/75611677/50dfb61b-43b3-453a-9747-d8568d9beec6" alt="your-image-description" style="border: 1px solid black;">
 </kbd>
 
 
@@ -19,7 +19,7 @@ Welcome to the API Automation Framework, a comprehensive solution for automating
 ## Key Features
 * **Structured Configuration:** Uses pom.xml, application.properties, and config.properties for centralized management of dependencies, application settings, and framework configurations.
 * **POJO (Plain Old Java Object):**  These objects are typically used for serializing and deserializing data, especially when interacting with APIs. They help maintain data integrity and readability by mapping JSON data to Java objects and vice versa.
-*** Maintainable Test Structure:** Implements the Page Object Model (POM) design pattern, ensuring that UI changes only necessitate changes in one place.
+* **Maintainable Test Structure:** Implements the Page Object Model (POM) design pattern, ensuring that API changes only necessitate changes in one place.
 * **Reusable Utilities:** Offers utility classes such as CommonActions and CommonUtilities for widely used functions, ensuring DRY (Don't Repeat Yourself) code.
 * **Behavior-Driven Development (BDD):** Integrates Cucumber for writing tests in natural language, fostering collaboration between developers, QA, and non-technical stakeholders.
 * **Integrated Logging and Reporting:** Captures logs for debugging and creates comprehensive test execution reports.
