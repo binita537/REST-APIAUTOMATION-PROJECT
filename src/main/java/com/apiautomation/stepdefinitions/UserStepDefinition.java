@@ -1,9 +1,8 @@
 package com.apiautomation.stepdefinitions;
 
-import com.apiautomation.commonutils.CommonUtils;
+import com.apiautomation.commonutils.RequestSpecBuilderUtil;
 import com.apiautomation.requestbuilder.AddUserRequest;
 import com.apiautomation.requestbuilder.AddUserRequestBuilder;
-import com.apiautomation.commonutils.RequestSpecBuilderUtil;
 import com.apiautomation.responsebuilder.AddUserResponse;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -16,7 +15,6 @@ import io.restassured.specification.ResponseSpecification;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 
@@ -34,9 +32,8 @@ public class UserStepDefinition {
 
     AddUserRequest userRequest;
 
-      CommonUtils commonUtils;
     @Given("the user has a new book")
-    public void the_user_has_a_new_book(DataTable userDataTable) throws FileNotFoundException {
+    public void the_user_has_a_new_book(DataTable userDataTable) {
 
         log.info("#Prepraing the adduser payload with data-------");
         // Convert the DataTable into a List of Maps
@@ -56,21 +53,6 @@ public class UserStepDefinition {
     }
 
 
-   /* @When("the user Call AddUser request")
-    public void the_user_call_add_ap_i_request() {
-
-        log.info("#Seeting base Url And content Type-------");
-        requestSpecification = new RequestSpecBuilder().setBaseUri("https://thinking-tester-contact-list.herokuapp.com")
-                .setContentType(ContentType.JSON).build();
-
-        RequestSpecification requestSpecificationWithBody = given().spec(requestSpecification).body(userRequest);
-
-
-        response = requestSpecificationWithBody.when().post("/users");
-
-        log.info("#Response: " + response.asString().replaceAll("\\s+", ""));
-    }
-*/
     @When("the user calls the AddUser request")
     public void the_user_call_add_ap_i_request() {
 

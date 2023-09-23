@@ -10,7 +10,7 @@ Feature: Book Management
   Scenario: Verify the user added successfully
     Given the user has a new book
       | firstname | lastname | email                 | password |
-      | John      | Doe      | tt21.doie@example.com | pass123  |
+      | John      | Doe      | t1.doie@example.com | pass123  |
     When the user calls the AddUser request
     Then the user should be added successfully
 
