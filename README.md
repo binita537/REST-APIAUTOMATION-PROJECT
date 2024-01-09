@@ -8,8 +8,9 @@ Welcome to the API Automation Framework, a comprehensive solution for automating
 
 
 <kbd>
-<img src="https://github.com/binita537/REST-APIAUTOMATION-PROJECT/assets/75611677/50dfb61b-43b3-453a-9747-d8568d9beec6" alt="your-image-description" style="border: 1px solid black;">
+<img src="https://github.com/binita537/REST-APIAUTOMATION-PROJECT/assets/75611677/edf1ae13-3450-4a85-9760-a7e44e03fc98" alt="your-image-description" style="border: 1px solid black;">
 </kbd>
+
 
 
 
